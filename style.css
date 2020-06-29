@@ -1,0 +1,18 @@
+/* Stylesheet for Playbook*/
+:root {
+    --steep: gray;
+    --lovely: rgb(123, 43, 100);
+}
+body {
+background-color: var(--steep);
+}
+h2 {
+color: maroon;
+text-decoration: underline;
+}
+.text{
+    background: midnightblue;
+    color: whitesmoke;
+    text-align: justify;
+    padding: 20px, 30px, 40px, 10px;
+}
