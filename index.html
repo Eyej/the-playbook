@@ -2,36 +2,83 @@
 <html>
     <head>
         <title>Ij's Plaything!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-    <main>
-    <!--Back to the world of HTML, CSS and JavaScript. I will make it up to the Frameworks-->
-    <h2 class = "text">Welcome to my Personal Playbook</h2>
-    <img src = "#" alt = "Ij seating pretty">
-    <p class = "text">In this page, I will be sharing  text and adding links, forms, buttons and all the new tools and items that 
-        i have learnt on freecodecamp (FCC). Click <a href = "#">here</a> to see more images.</p>
-
-    <div>
-        <form action = "submit">
-        <input type = "text" placeholder="Search here" required>
-        <button type = "submit">Go</button>
-        <button type = "menu">Menu</button><br>
-        <label for "skill">
+        <header>
+            
+        </header>
+        <div>
+            <nav id = "navbar"> <!--Creating a flexible navigation bar-->
+                <ul>
+                    <li><a href = "#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!--Adding a search bar into my navbar-->
+                    <li style= "float:right">
+                        <form id = "searchbar" action = "submit">
+                            <label>Search: </label>
+                            <input type = "text" placeholder="Type requests here"> <!--required-->
+                            <button type = "submit">Go</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+         
+        <main>
+        <!--Back to the world of HTML, CSS and JavaScript. I will make it up to the Frameworks-->
+        <div class ="row">
+            <h1>Welcome to my Personal Playbook!</h1>
+            <div class= 'content'>
+                <section class = "content">
+                    <h2 class="text">The Coding Journey</h2>
+                    <img id = "my-picture" src = "C:\Users\Eyejay\Pictures\IMG_20171118_162349.jpg" alt = "Ij seating pretty">
+                    <p class = "text">In this page, I will be sharing text and adding links, forms, buttons and all the new tools and items that 
+                        i have learnt on freecodecamp (FCC). Click <a href = "#">here</a> to see more images.</p>
+                </section>
+            </div>
+            <div class = "aside">
+                <div><aside>
+                    <h3 class = "text"><u>Daily Activities </u><button type = "menu">Menu</button><br></h3>
+                    
+                    <p class = "text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime soluta reiciendis sit reprehenderit sequi voluptates 
+                        adipisci animi quisquam illo doloremque, excepturi minus, obcaecati officia architecto. Tempore exercitationem repudiandae 
+                        quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita necessitatibus, totam dolore quo adipisci hic 
+                        molestiae, quibusdam cum impedit voluptatem tempora quam asperiores atque optio est tenetur voluptatibus repellendus.</p>
+                </aside></div>
+                <div>
+                    <h3 class= "text">Other Images</h3>
+                </div>
+                <div>
+                    <h3 class = "text">Follow us on Social!</h3>
+                </div>
+            </div>
+        </div>     
+        
+        <!--<label for "skill">
             <input type = "radio" name = "Dunno" value = "skill">Skill
         </label>
         <label for "goals">
             <input type = "checkbox" name = "Dunno" value = "goals">Goals
-        </label>
-    </form>
-    </div>
+        </label>-->
 
-    
-
-
+        <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Labore et placeat consequuntur sit atque, harum necessitatibus facere eligendi
+        quia cum voluptatem molestias repellendus dolorum magnam laudantium vel fugiat asperiores qui!</p>
 
 
 
-    </main>
+
+
+        </main>
+        <br>
+        <footer>
+            <estrong>&copy; 2020 EJ's Collectibles</strong>
+        </footer>
     </body>
+   
 </html>

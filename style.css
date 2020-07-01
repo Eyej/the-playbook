@@ -1,18 +1,110 @@
 /* Stylesheet for Playbook*/
 :root {
-    --steep: gray;
+    --steep: rgba(61, 59, 59, 0.5);
+    --pop: #09A7A1; 
     --lovely: rgb(123, 43, 100);
+    --orange: #FF7F00;
+    --rasp: #FF007F;
+
 }
 body {
-background-color: var(--steep);
+    /*background-color: var(--lovely);*/
+    background: var(--lovely);
+    text-align: justify;
+   
 }
-h2 {
-color: maroon;
-text-decoration: underline;
+h1 {
+    color: whitesmoke;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+#my-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+button{
+    background-color: maroon;
+    color: white;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+a{
+    color: rgba(250, 246, 20, 0.89);
+    text-decoration: none;
+
+}
+a:hover{
+    color: black;
 }
 .text{
-    background: midnightblue;
+    /*background: midnightblue;*/
     color: whitesmoke;
     text-align: justify;
-    padding: 20px, 30px, 40px, 10px;
+    padding: 10px, 20px, 20px, 10px;
+}
+#searchbar{
+    display: inline-flex;
+    position: relative;
+    /* left: 200px; */
+    color: grey;
+    border-radius: 15px;
+}
+.content{
+    float: left;
+    width: 63%;
+    padding: 5px;
+}
+.aside{
+    /*position: relative;*/
+    float: right;
+    width: 35%;
+    padding: 5px;
+    background:  hsl(285, 45%, 20%);
+}
+.aside button{
+    float: right;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*Styling the navs*/
+#navbar{
+    background: hsl(285, 48%, 11%);     /*Code to experiment with hue, saturation and light*/
+    margin: -10px;
+    position: sticky;
+    /*overflow: hidden;*/
+    /*position: relative;
+    top: 0px;*/
+}
+nav ul{
+    margin-top: 0px;
+    padding: 20px;
+    
+}
+nav li{
+    display: inline;
+    margin-right: 30px;
+    text-align: center;
+    /*position: relative;*/
+}
+footer{
+    background: url('https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png');
+    margin: -7px;
+    text-align: center;
+    font-family: monospace;
+    padding: 5px;
+    /*position: relative;
+    bottom: auto;*/
+
 }
