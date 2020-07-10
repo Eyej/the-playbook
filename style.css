@@ -5,6 +5,7 @@
     --lovely: rgb(123, 43, 100);
     --orange: #FF7F00;
     --rasp: #FF007F;
+    --starynight: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
 
 }
 body {
@@ -24,18 +25,34 @@ h1 {
     text-align: center;
 }
 #my-picture{
-    width: 200px;
-    height: 200px;
+    max-width: 50%;
+    max-height: auto;
+ /* to make an image responsive use: max-width: 100%; height: auto; */
+ /* To improve image appearance on high res screens, set height and width to 0.5 original size */
     border-radius: 5px;
 }
 button{
-    background-color: maroon;
+    background-color: rgba(40, 189, 40, 0.575);
     color: white;
+    /* margin: 5px;
+    padding: 5px; */
+    border-radius: 5px;
+    /* position: relative;
+    right: 10px; */
 }
 button:hover{
     color: black;
-    background-color: white;
+    animation-name: background-color;       /* This is also part of the @keyframes code */
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
+/* How to edit an elemnet, in this case a button using @keyframes*/
+
+  @keyframes background-color{
+    100%{
+      background-color: #4791d0;
+    }
+  }
 a{
     color: rgba(250, 246, 20, 0.89);
     text-decoration: none;
@@ -44,23 +61,35 @@ a{
 a:hover{
     color: black;
 }
+
 .text{
     /*background: midnightblue;*/
     color: whitesmoke;
     text-align: justify;
     padding: 10px, 20px, 20px, 10px;
 }
-#searchbar{
-    display: inline-flex;
-    position: relative;
-    /* left: 200px; */
-    color: grey;
-    border-radius: 15px;
-}
 .content{
     float: left;
     width: 63%;
     padding: 5px;
+}
+.top-content{
+    /* style to make a flex container, switch content directions  and assign width/spacing */
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-around; /*sets space btw img and text within top-content of article*/
+}
+/* style for image in class top content, I've set the image to occupy 25% of the flex Con width */
+.top-content img{
+    width: 25%;
+    height: 100%;
+}
+#heading-dates{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    color: white;
 }
 .aside{
     /*position: relative;*/
@@ -95,12 +124,72 @@ nav ul{
 nav li{
     display: inline;
     margin-right: 30px;
+    padding: 15px;
     text-align: center;
-    /*position: relative;*/
 }
+nav li:hover{
+    transform: scale(2);
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;      /* Code to prolong the animation whilst hovering*/
+}
+@keyframes background-color{
+    100%{
+      background-color: hsla(163, 66%, 48%, 0.74);
+    }
+  }
+nav ul div{
+    position: static;
+    float: right;
+}
+#searchlabel{
+    /* display: inline; */
+    color:  rgba(250, 246, 20, 0.89);
+    text-align: center;
+}
+#searchbar{
+    display: inline;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*Practising Apllied Visual Design with a complex shape*/
+.heart {
+    position: relative;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 30px;
+    width: 30px;
+    transform: rotate(-45deg);
+  }
+  .heart::after {           /* <::after> and <::before> are used to add things before or after an element*/
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -25px;
+    left: 0px;
+  }
 footer{
     background: url('https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png');
-    margin: -7px;
+    margin: -15px;
     text-align: center;
     font-family: monospace;
     padding: 5px;

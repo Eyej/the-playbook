@@ -7,9 +7,6 @@
     </head>
     <body>
         <header>
-            
-        </header>
-        <div>
             <nav id = "navbar"> <!--Creating a flexible navigation bar-->
                 <ul>
                     <li><a href = "#">Home</a></li>
@@ -18,29 +15,52 @@
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact</a></li>
                     <!--Adding a search bar into my navbar-->
-                    <li style= "float:right">
-                        <form id = "searchbar" action = "submit">
-                            <label>Search: </label>
+                    <div>
+                        <form id = "searchbar" action = "submit"></form>
+                            <label for = "searchbar" id = "searchlabel">Search:</label>
                             <input type = "text" placeholder="Type requests here"> <!--required-->
                             <button type = "submit">Go</button>
                         </form>
-                    </li>
+                    </div>
+                
                 </ul>
-            </nav>
-        </div>
-         
+            </nav> <h1>Welcome to my Personal Playbook!</h1>
+        </header>
+        
         <main>
         <!--Back to the world of HTML, CSS and JavaScript. I will make it up to the Frameworks-->
         <div class ="row">
-            <h1>Welcome to my Personal Playbook!</h1>
-            <div class= 'content'>
-                <section class = "content">
-                    <h2 class="text">The Coding Journey</h2>
-                    <img id = "my-picture" src = "C:\Users\Eyejay\Pictures\IMG_20171118_162349.jpg" alt = "Ij seating pretty">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corrupti esse voluptatem, deserunt 
+                error odit fugiat natus accusamus itaque amet rerum expedita incidunt mollitia provident porro consequatur eaque quos magni.</p>
+                <!--Styling the webpage box-model-->
+                <article class = "content">
+                    <div class = "top-content">
+                        <div id = "heading-dates">
+                            <h2 class="text">The Coding Journey</h2>
+                    <time datetime="2020-06-16">16<sup>th</sup> June, 2020</time>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nesciunt laboriosam maxime 
+                        quidem sint, neque dolorem fugiat esse eligendi sit, explicabo illum labore? Quidem cum quis fugit. Temporibus, animi est?</p>
+                        </div>
+                    <img id = "my-picture" src = "C:\Users\Eyejay\Pictures\Saved Pictures\side-eye.jpg" alt = "Ij seating pretty">
+                    </div>
+                    
                     <p class = "text">In this page, I will be sharing text and adding links, forms, buttons and all the new tools and items that 
                         i have learnt on freecodecamp (FCC). Click <a href = "#">here</a> to see more images.</p>
-                </section>
-            </div>
+                
+                    <!-- Experimenting with form and button accessibility -->
+                    <form id ="subscribe" action="#">
+                        <label for="subscribe">Sign up:</label>
+                        <input type="email" value = "Email"> <input type="submit" name="submit" value="Submit"> <br>
+                        <input id = "marketing" type="checkbox" value = "marketing">
+                        <label for = "marketing" class ="text">Receive top discounts and marketing promos</label>
+                        <br>
+                        <input id = "webinars" type="checkbox" value = "schedule">
+                        <label for = "webinars" class ="text">Gain webinar and masterclass schedule information</label><br>
+                        <label for="pickdate">Preferred Date:</label><input id = "pickdate" type ="date" name = >
+                        <br>
+                        
+                    </form>
+                </article>
             <div class = "aside">
                 <div><aside>
                     <h3 class = "text"><u>Daily Activities </u><button type = "menu">Menu</button><br></h3>
@@ -50,8 +70,9 @@
                         quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita necessitatibus, totam dolore quo adipisci hic 
                         molestiae, quibusdam cum impedit voluptatem tempora quam asperiores atque optio est tenetur voluptatibus repellendus.</p>
                 </aside></div>
-                <div>
+                <div class>
                     <h3 class= "text">Other Images</h3>
+                    <div class = "heart"></div>
                 </div>
                 <div>
                     <h3 class = "text">Follow us on Social!</h3>
