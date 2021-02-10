@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rendition of a Starry Night</title>
+</head>
+<body>
+    <!-- stylesheet for starry background -->
+    <style>
+        .container{
+            background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+            margin: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+            height: 1000px;
+            }
+        #star-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        h2{
+            color: silver;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .star{
+            background-color: white;
+            margin-top: 10%;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            animation-iteration-count: infinite;
+        }
+        .star1{
+            margin-top: 15px;
+            margin-right: 20px;
+            animation-name: shine;
+            animation-duration: 2s;
+        }
+        .star2{
+            margin-bottom: 25px;
+            animation-name: shine;
+            animation-duration: 1s;
+        }
+        .star3{
+            margin-top: 35px;
+            margin-right: 10px;
+            animation-name: shine;
+            animation-duration: 1.5s;
+        }
+        .star4{
+            margin-top: 20%;
+            padding: 5px;
+            animation-name: shine;
+            animation-duration: 2.5s;
+        }
+        @keyframes shine{
+            40%{
+                transform: scale(0.5);
+                background-color: gold;
+                opacity: 0.5;
+            }
+            
+        }
+    </style>
+    <div class="container"><h2>A lovely night!</h2><br>
+        <div id = "star-container">
+            <div class = "star1 star"></div>
+            <div class = "star2 star"></div>
+            <div class = "star3 star"></div>
+            <div class = "star4 star"></div>
+            </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
